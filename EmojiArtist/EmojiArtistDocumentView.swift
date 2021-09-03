@@ -65,6 +65,8 @@ struct ScrollingEmojisView: View {
             HStack {
                 ForEach(emojis.map { String($0) }, id: \.self) { emoji in
                     Text(emoji)
+                        // NSItemProvider is simple little object that will provide the data to someone else asynchronously
+                        .onDrag { NSItemProvider(object: emoji as NSString) }
                 }
             }
         }
