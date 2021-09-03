@@ -12,6 +12,8 @@ class EmojiArtistDocument: ObservableObject {
     
     init() {
         emojiArtist = EmojiArtistModel()
+        emojiArtist.addEmoji("🦉", at: (-200, -200), size: 80)
+        emojiArtist.addEmoji("🦊", at: (50, 100), size: 100)
     }
     
     // Convenience functions to get them

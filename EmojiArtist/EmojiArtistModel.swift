@@ -16,8 +16,8 @@ struct EmojiArtistModel {
         let text: String
         // There are not CGFloat, This is a device and UI independent representation
         // Using Int to emphasize it's not CGFloat. it can be Double or Float.
-        var x: Int
-        var y: Int
+        var x: Int // offset from the center
+        var y: Int // offset from the center
         var size: Int
         let id: Int
         
